@@ -1,9 +1,109 @@
 body {
-    background-color: rgb(0, 255, 255);
+background-color: rgb(0, 255, 255);
 }
 h1{
-    color: rgba (8, 141, 165, 1);
-    margin-left: 100px;
-    text-shadow: 1px .5px 4px rgba (0, 0, 0, 0.6);
+color: rgba (8, 141, 165, 1);
+margin-left: 100px;
+text-shadow: 1px .5px 4px rgba (0, 0, 0, 0.6);
 }
 
+.container {
+width: 450px;
+height: 450px;
+background-color: #faebd7;
+border: 2px solid black;
+border-radius: 5%;
+}
+/* ----------------------------
+SELECT ALL SQUARES IN THE ARRAY
+------------------------------*/
+.container .squares:nth-child(-n+4) {
+background-image: url("../images/icons/smile1.png");
+color: #fff;
+float: left;
+width: 100px;
+height: 100px;
+margin: 5px;
+border: 1px solid black;
+border-radius: 25%;
+cursor: pointer;
+transition: transform 5s 10s ease-in-out ;
+}
+
+/* ----------------------------
+SELECT ALL SQUARE PARAGRAPH IN THE ARRAY
+------------------------------*/
+
+.squares:nth-child(-n+4) p{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 0.4cm;
+font-weight: 900;
+text-align: center;
+text-shadow: 2px 1px 4px  rgba(0,0,0,0.8);
+}
+
+/* ----------------------------
+SELECT A SQUARE IN THE ARRAY
+------------------------------*/
+
+.squares:nth-child(1){
+background: red;
+}
+
+.squares:nth-child(2){
+background: blue;
+}
+
+.squares:nth-child(3){
+    background: greenyellow;
+}
+
+.squares:nth-child(4){
+    background: maroon;
+}
+
+/* ----------------------------
+HOVER, TRANSFORM AND TRANSLATE SQUARE
+------------------------------*/
+
+.container .squares:nth-child(-n+4):hover{
+    background-image: url("../images/icons/smile2.png");
+    transform: scale(0.5);
+    animation-name: race;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5,0.2,0.3,2);
+
+
+}
+
+.squares:nth-child(1):hover{
+    background: violet;
+    }
+    
+    .squares:nth-child(2):hover{
+    background: orange;
+    }
+    
+    .squares:nth-child(3):hover{
+        background: purple;
+    }
+    
+    .squares:nth-child(4):hover{
+        background: white;
+    }
+    
+/* ----------------------------------
+    ANIMATION EFFECTS
+---------------------------------- */
+
+@keyframes race {
+    0%, 100% {
+        transform: translateY(0px);
+        background-image: url("../images/icons/smile2.png");
+    }
+    
+    50% {
+        transform: translateY(330px);
+    }
+}
