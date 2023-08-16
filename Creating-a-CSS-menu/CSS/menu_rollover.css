@@ -44,6 +44,7 @@ body { background: #184352;
     opacity: 1;
     /*While hovered, drop down-menu appears
     This also avoids a block-level bug*/ 
+    visibility: visible;
 }
 .submenu {
     padding: 0;
