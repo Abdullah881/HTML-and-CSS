@@ -11,23 +11,19 @@
     <title>Academy Cinemas</title>
   </head>
   <body>
-    <div class="container">
-
-
-
-
+    <div class="container" id="home">
       <nav class="navbar navbar-expand-lg navbar-light bg-info">    
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link text-light" href="#">About</a>
+              <a class="nav-link text-light" href="#about">About</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link text-light" href="#">ShowTimes</a>
+              <a class="nav-link text-light" href="#showtimes">ShowTimes</a>
             </li>
             </li>
             <li class="nav-item active">
-              <a class="nav-link text-light" href="#">Deals</a>
+              <a class="nav-link text-light" href="#deals">Deals</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -49,15 +45,15 @@
         <div class="row">
           <div class="col-sm">
 
-            <img src="Img/image_1.jpeg" alt="Movie_1" width="300" height="300">
+            <img src="Img/image_4.jpeg" alt="Portland" width="300" height="300">
 
           </div>
           <div class="col-sm">
 
             <h1>About</h1>
-            <p>This is a Movie</p>
-            <p>This is a Disney Movie</p>
-            <p>This Movie stars Emma Watson (Hermione from Harry Potter)</p>
+            <p>Welcome to Portland Cinemas</p>
+            <p>A Premiere film experience featuring the latest blockbusters</p>
+            <p>Join us for an evening of popcorn and Hollywood</p>
 
 
           </div>
@@ -77,9 +73,69 @@
           </div>
         </div>
       </div>
-      <!-- hello -->
-
+<!-- ShowTimes -->
+  <div>
+    <div id="showtimes">
       <div class="text-center">
+        <h1 class="text-primary my-5">NOW SHOWING</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-sm border border-primary" >
+          <img src="Img/image_1.jpeg" alt="Beauty and The Beast" width="250" height="250" class="mt-1 ml-4">
+          <div class="ml-3">
+            <h4 class="ml-3">Beauty and The Beast</h4>
+            <h6>Step into a timeless tale of love and enchantment
+            where an unlikely bond forms between a spirited young woman and 
+            a cursed prince trapped in a magical castle
+            </h6>
+            <br>
+            <p class="text-center text-info">show times:</p>
+            <button type="button" class="btn btn-primary disabled mb-1">12PM</button>
+            <button type="button" class="btn btn-primary disabled mb-1">2PM</button>
+            <button type="button" class="btn btn-primary disabled mb-1">4PM</button>
+            <button type="button" class="btn btn-primary disabled mb-1">8PM</button>
+          </div>
+        </div>
+        <div class="col-sm border border-primary ml-1" >
+          <img src="Img/image_2.jpeg" alt="ghost in the shell" width="250" height="250" class="mt-1 ml-4">
+          <div class="ml-3">
+            <h3 class="ml-3">Ghost In The Shell</h3>
+            <h6>
+              Immerse yourself in a futuristic world of intrigue and cybernetic mysteries
+              where a skilled cyborg investigator delves into a high-tech labyrinth 
+              to uncover the truth behind a series of enigmatic events
+            </h6>
+            <p class="text-center text-info">show times:</p>
+            <button type="button" class="btn btn-primary disabled mb-1">12PM</button>
+            <button type="button" class="btn btn-primary disabled mb-1">2PM</button>
+            <button type="button" class="btn btn-primary disabled mb-1">4PM</button>
+            <button type="button" class="btn btn-primary disabled mb-1">8PM</button>
+          </div>
+        </div>
+        <div class="col-sm border border-primary ml-1" >
+          <img src="Img/image_3.jpeg" alt="Kong: Skull Island" width="250" height="250" class="mt-1 ml-4">
+          <div class="ml-3">
+            <h3 class="ml-4">Kong: Skull Island</h3>
+            <h6>
+              Embark on an exhilarating journey ,
+              where a daring expedition to an uncharted island becomes a battle for survival against colossal creatures
+              and the legendary king of the jungle himself
+            </h6>
+            <p class="text-center text-info">show times:</p>
+            <button type="button" class="btn btn-primary disabled mb-1">12PM</button>
+            <button type="button" class="btn btn-primary disabled mb-1">2PM</button>
+            <button type="button" class="btn btn-primary disabled mb-1">4PM</button>
+            <button type="button" class="btn btn-primary disabled mb-1">8PM</button>
+          </div>
+        </div>
+    </div>
+  </div>
+  
+
+
+   <!-- ShowTimes -->
+      <div class="text-center" id="deals">
         <form>
           <h1 class="text-primary my-5">Sign Up For Movie Club Rewards</h1>
             <div class="form-group">
@@ -89,13 +145,8 @@
         </form>
       </div>
 
-      <div class="container my-5 ml-5">
+      <div class="container my-5">
         <ul class="nav nav-inline">
-          <li class="nav-item">
-            <small><a class="nav-link active" href="">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-              &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-            </a></small>
-          </li>
           <li class="nav-item">
             <small><a class="nav-link active" href="">Movie Rewards</a></small>
           </li>
@@ -110,15 +161,6 @@
           </li>
         </ul>
       </div>
-
-
-
-
-
-
-
-
-
     </div>
 
     <!-- Optional JavaScript -->
