@@ -96,3 +96,9 @@ span,p {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
+.container-video {
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+}
