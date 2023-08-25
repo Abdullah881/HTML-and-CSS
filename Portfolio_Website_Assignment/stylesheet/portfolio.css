@@ -47,10 +47,11 @@ p:hover {
 }
 
 /* Center class hover effect - This only affects the quote, github link, and footer */
-.center:hover {
+.center-h:hover {
     transition: transform 2s; /* This makes the transform effect last 2 seconds */
     transform: scale(1.1); /* This makes the elements with class "center" increase in size by 1.1 when hovered over */
 }
+
 
 /* Anchor elements */
 a {
@@ -104,8 +105,8 @@ footer {
     position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
     top: 0; /* This ensures no space is displayed above the navbar */
     width: 100%; /* This makes the navbar span the entire width of the page */
-    z-index: 1; /* This ensures other elements don't display over the navbar */
-    -webkit-animation: moveNav 5s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
+    z-index: 1; /* This ensures other elements don't display over the navbar 
+    -webkit-animation: moveNav 5s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 
     animation: moveNav 5s; /* This applies the moveNav animation for all other browsers */
 }
 
@@ -125,8 +126,8 @@ footer {
     font-family: Avant Garde, Helvetica; /* This specifies the font family for text on our navbar */
     font-size: 20px; /* This specifies the font size for text on our navbar */
     text-align: center; /* This centers the text within its container */
-    position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
-    -webkit-animation: moveNavText 5.75s; /* Animation for Safari 4.0 - 8.0 */
+    position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below 
+    -webkit-animation: moveNavText 5.75s; /* Animation for Safari 4.0 - 8.0 
     animation: moveNavText 5.75s; /* Applies the moveNavText animation for 5.75s */ 
 }
 
@@ -180,9 +181,9 @@ footer {
     color: white; /* Makes the font color white */
     width: 100%; /* Ensures the video-text container fills the width of the video */
     padding: 20px; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
-    position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
+    position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below 
     -webkit-animation: moveVideoText 5.75s;
-    animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s; */
 }
 
 /* This animation effect causes the overlay video text to move up from the bottom of the page upon page load */
@@ -201,6 +202,15 @@ footer {
     float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 10px;
+    padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
+    height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+    background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
+}
+
+.Column_3 {
+    float: right;
+    width: 100%; /* This ensures the column takes up half of the page width */
+    padding: 0px;
     padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
     height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
     background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
@@ -270,11 +280,7 @@ input[type=submit] {
     font-family: Perpetua, Rockwell Extra Bold;
 }
 
-/* Hover effect for submit button */
-input[type=submit]:hover {
-    background-color: white; /* Turns the background of the submit button white when the user hovers over it */
-    color: black; /* Turns the font black when hovered over */
-}
+
 
 /* Form element */
 form {
@@ -284,3 +290,97 @@ form {
     font-family: "Trebuchet MS", Optima;
 }
 /***** END OF CONTACT FORM STYLING *****/
+
+
+/* for CV ONLY */
+
+
+
+/* Reset default margins and paddings */
+* {
+margin: 0;
+padding: 0;
+}
+
+/* Header styles */
+.header {
+color: #0070C0;
+font-family: Arial, sans-serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 14pt;
+padding-top: 3pt;
+padding-left: 112pt;
+line-height: 16pt;
+text-align: center;
+}
+
+/* Contact styles */
+.contact {
+font-family: Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 11pt;
+text-align: center;
+}
+
+.contact-link {
+color: black;
+text-decoration: none;
+}
+
+.location {
+color: black;
+font-size: 9pt;
+}
+
+/* Divider styles */
+.divider {
+text-indent: 0pt;
+line-height: 1pt;
+text-align: left;
+}
+
+/* Section heading styles */
+.section-heading {
+color: #0070C0;
+font-family: Arial, sans-serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 11pt;
+padding-top: 4pt;
+padding-bottom: 1pt;
+padding-left: 6pt;
+text-align: left;
+}
+
+/* Sub-heading styles */
+.sub-heading {
+font-family: Arial, sans-serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 11pt;
+}
+
+/* Education section styles */
+.education {
+padding-left: 5pt;
+}
+
+.education-list {
+list-style-type: none;
+padding-left: 24pt;
+text-indent: -18pt;
+line-height: 13pt;
+text-align: left;
+}
+
+.education-list li {
+display: list-item;
+margin-left: 0.5em;
+}
+
+/* More styles for other sections can be added here */
