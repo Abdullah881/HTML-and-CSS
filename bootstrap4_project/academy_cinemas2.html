@@ -143,9 +143,7 @@
         <h1>Movie Deals</h1>
         <p class="lead">Check out our monthly deals...</p>
         <!-- Movie deals -->
-        <h1 class="display-4 hidden-sm-down" style="color: #fff; font-family: roboto; font-weight: 900; text-transform: uppercase;">
-          <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
-        </h1>
+          <button  class="btn btn-outline-primary" type="button" data-toggle="modal" data-target="#register" >Movie Deals</button>
       </div>
     </div>
 <!-- /Jumbotron heading -->
@@ -185,7 +183,25 @@
     <!-- Sign Up Form -->
 
     <!-- Start Modal -->
-
+    <div class="modal" tabindex="-1" role="dialog" id="register">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Register To Receive Movie Details</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <!-- End Modal -->
