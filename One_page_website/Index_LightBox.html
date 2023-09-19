@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang =“en”>
+    <head>
+        <title>The Space Station</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/shared.css">
+        <!-- <link rel="stylesheet" href="./css/shared2.css"> -->
+        <link rel="stylesheet" href="css/animations.css">
+        <link rel="stylesheet" href="css/lightbox.css">
+        <script src="js/main.js" defer ></script>
+
+        
+    </head>
+    <main>
+    <!-- nav -->
+        <div class="wrap">
+            <div class="menu-container">
+                <ul class="menu">
+                    <a href="#home"><li>HOME</li></a>
+                    <li><a href = "#gallery">Gallery</a></li>
+                    <a href="#contact"><li>RESERVATION</li></a>
+                </ul>
+            </div>
+        </div>
+    <!-- end nav -->
+
+    <!-- HOME  -->
+    <div id="home">
+        <div class="container">
+            <div class="text-center">
+                <span class="head-main"> The Space Station</span>
+            </div>
+        </div>
+    </div>
+    <!-- end home -->
+
+    <!-- Gallery -->
+    <section id="gallery" >
+        <div>
+            <div class="container" style="width: 100%;">
+                <h1>Gallery</h1>
+                <div class="flex-container">
+                    <!-- Images used to open the lightbox -->
+                    <div class="row" style="width: 100%;">
+                        <div class="column">
+                        <img src="images/Thumb/Thumb_1.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow smaller">
+                        </div>
+                        <div class="column">
+                        <img src="images/Thumb/Thumb_2.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow smaller">
+                        </div>
+                        <div class="column">
+                        <img src="images/Thumb/Thumb_3.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow smaller">
+                        </div>
+                        <div class="column">
+                        <img src="images/Thumb/Thumb_8.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow smaller">
+                        </div>
+                    </div>
+                    
+                    <!-- The Modal/Lightbox -->
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="images/Thumb/Thumb_1.jpeg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="images/Thumb/Thumb_2.jpeg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="images/Thumb/Thumb_3.jpeg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="images/Thumb/Thumb_4.jpeg" style="width:100%">
+                        </div>
+                    
+                        <!-- Next/previous controls -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                        <!-- Caption text -->
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+                    
+                        <!-- Thumbnail image controls -->
+                        <div class="column">
+                            <img class="demo" src="images/Thumb/Thumb_1.jpeg" onclick="currentSlide(1)" alt="Nature">
+                        </div>
+                    
+                        <div class="column">
+                            <img class="demo" src="images/Thumb/Thumb_2.jpeg" onclick="currentSlide(2)" alt="Snow">
+                        </div>
+                    
+                        <div class="column">
+                            <img class="demo" src="images/Thumb/Thumb_3.jpeg" onclick="currentSlide(3)" alt="Mountains">
+                        </div>
+                    
+                        <div class="column">
+                            <img class="demo" src="images/Thumb/Thumb_8.jpeg" onclick="currentSlide(4)" alt="Lights">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Gallery -->
+
+    <!-- rsvp -->
+    <section id="contact">
+        <div class="container">
+            <div class="heading-padding">
+                <h1 class="heading-padding">Reservations</h1>
+                <div class="reservation">
+                    <h2><span>Your Adventure is just around the moon</span>
+                        <br> Reserve your flight today!
+                    </h2>
+                    <p class="rsvp-text">
+                        Please provide your contact information
+                    </p>
+                    <div>
+                        <form action="" method="post">
+                            <input class="rsvp" type="text" value="" placeholder="First Name">
+                            <input class="rsvp" type="text" value="" placeholder="Last Name">
+                            <input class="rsvp" type="text" value="" placeholder="Email">
+                            <input class="rsvp" type="text" value="" placeholder="Phone Number">
+                            <div class="form-spacer">
+                                <label class="terms">Terms and Conditions Apply</label>
+                            </div>
+                            <div>
+                                <input type="submit" value="submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end rsvp -->
+    <br>
+
+    <!--footer-->
+    <div>
+        www.the-space-station.com &nbsp;| &nbsp; &copy; 2017
+    </div>
+    <!--end footer-->
+    </main>
+</html>
